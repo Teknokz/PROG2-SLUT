@@ -13,15 +13,15 @@ namespace Slutprojekt
             
             int userguess = 0;
 
-            System.Console.WriteLine("Vad heter du?");
+            Lawyers myLawyer = new Lawyers();
+
+            System.Console.WriteLine("Vad heter advokaten?");
 
             string n = Console.ReadLine();
 
-            //Skapar instansen Court som tar n och skriver ut välkommen... + n
+            myLawyer.name = n;
 
-            Court newCourt = new Court(n);
-
-            // Denna while loopen körs medans gameactive == 1 (Ganeactive blir 0 när spelaren förlorat eller vunnit)
+            System.Console.WriteLine("Du har valt namnet " + n);
 
             while(gameActive == 1)
             {

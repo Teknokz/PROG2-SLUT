@@ -7,17 +7,11 @@ namespace Slutprojekt
     {
         public string name;
 
-        //Crime newcrime = new Crime();
-        
-        public Court(string n)
-        {
-            
-            name = n;
-            
-            System.Console.WriteLine("Välkommen Åklagare " + n);
+        public int stubborness = 0;
 
-            //test
+        public int influence = 0;
 
-        }
+        public int respect = 0;
+
     }
 }
