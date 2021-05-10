@@ -21,14 +21,17 @@ namespace Slutprojekt
 
             myLawyer.name = n;
 
-            System.Console.WriteLine("Du har valt namnet " + n);
+            System.Console.WriteLine("Du har valt namnet" + n);
 
             while(gameActive == 1)
             {
 
+                Console.Clear();
+
             System.Console.WriteLine("Hur vill du gå tillväga?");
             System.Console.WriteLine("1) Lägga till fler brott i brottslagret");
             System.Console.WriteLine("2) Åklaga för följande brott");
+            System.Console.WriteLine("3) Lägga till Kunskap");
 
             string input = Console.ReadLine();
             
@@ -63,6 +66,26 @@ namespace Slutprojekt
                  //Crime newCrime = new Crime();
 
             }   
+
+            else if(userguess == 3)
+            {
+                
+                Console.Clear();
+
+                System.Console.WriteLine("Hur mycket knowledge vill du lägga till?");
+
+                input = Console.ReadLine();
+
+                int.TryParse(input, out userguess);
+
+                myLawyer.addKnowledge(userguess);
+
+                System.Console.WriteLine("Du har nu " + myLawyer.Knowledge + " Knowledge");
+
+                System.Threading.Thread.Sleep(1000);
+
+                
+            }
 
             }
             

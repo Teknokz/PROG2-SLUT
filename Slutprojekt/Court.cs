@@ -13,5 +13,10 @@ namespace Slutprojekt
 
         public int respect = 0;
 
+        public void addInflunce(int amount)
+        {
+            influence += amount;
+        }
+
     }
 }
