@@ -13,7 +13,7 @@ namespace Slutprojekt
             
             int userguess = 0;
 
-            Lawyers myLawyer = new Lawyers();
+            Lawyer myLawyer = new Lawyer();
 
             System.Console.WriteLine("Vad heter advokaten?");
 

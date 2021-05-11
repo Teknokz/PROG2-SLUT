@@ -2,7 +2,7 @@ using System;
 
 namespace Slutprojekt
 {
-    public class Lawyers : Court
+    public class Lawyer : Court
     {
         public int Knowledge = 0;
         
